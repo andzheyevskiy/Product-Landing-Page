@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+:root{
+    --background-color: rgb(148, 0, 136,0.5);
+    --button-background: rgb(59, 1, 61);
+}
+body{
+    background-color: var(--background-color);
+    position: static;
+}
+#header{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    width: 95%;
+    max-height: 350px;
+    margin: 0 2.5%;
+    top: 0;
+    box-sizing: border-box;
+}
+#images{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+#images img{
+    max-height: 50px;
+    max-width: 100px;
+}
+#header-img2{
+margin-top: -25px;
+}
+#nav-bar{
+    font-size: 30px;
+    align-self: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-bar a{
+    color: gold;
+    text-decoration: none;
+    background-color: var(--button-background);
+    border-radius: 10px;
+    padding: 5px 12px;
+    margin: 5px;
+}
+main{
+    width: 90%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    border: 1px solid var(--button-background);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+    color: gold;
+    font-weight: bold;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#email{
+    width: 50%;
+    margin-bottom: 10px;
+}
+#submit{
+width: 25%;
+height: 30px;
+background-color: gold;
+font-weight: bold;
+}
+#info{
+    margin-bottom: 25px;
+}
+#video{
+    width: 50%;
+    margin: 20px 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+p{
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+}
+#products{
+    margin-top: 25px;
+    padding: 5%;
+    display: flex;
+
+}
+#products div img{
+    width: 40%;
+    margin: auto 25%;
+}
+#products div p{
+    width: 40%;
+    margin: auto 25%;
+    text-align: center;
+}
+
+#critics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+#critics img{
+    width: 32%;
+    margin-bottom: 15px;
+    background-color: gold;
+    border-radius: 25%;
+}
+
+.footer{
+    margin: 20px 10%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34,0.7);
+}
+.footer a:link{
+    color: #ffffff;
+}.footer a:visited{
+    color: #ffffff;
+}
+.footer a:hover{
+    color: gold;
+}
+.footer a:active{
+    color: gold;
+}
+
+
+@media only screen and (min-width:587px){
+#header{
+    height: 80px;
+}
+main{
+    margin-top: 100px;
+}
+}
