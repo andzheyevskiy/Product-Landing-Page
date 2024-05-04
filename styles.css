@@ -85,15 +85,18 @@ body{
 margin-top: -25px;
 }
 #nav-bar{
-    font-size: 30px;
+    font-size: 23px;
     align-self: center;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #nav-bar a{
+    width: 70px;
     color: gold;
     text-decoration: none;
+    text-align: center;
     background-color: var(--button-background);
     border-radius: 10px;
     padding: 5px 12px;
@@ -139,8 +142,10 @@ font-weight: bold;
     margin-bottom: 25px;
 }
 #video{
-    width: 50%;
-    margin: 20px 25%;
+    display: block;
+    aspect-ratio: 16/9;
+    width: 70%;
+    margin: 20px auto;
     border: 1px solid black;
     border-radius: 5px;
 
@@ -203,9 +208,19 @@ p{
 
 @media only screen and (min-width:587px){
 #header{
-    height: 80px;
+    height: initial;
 }
 main{
     margin-top: 100px;
+}
+#nav-bar{
+    font-size: 30px;
+    align-self: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-bar a{
+    width: initial
 }
 }
